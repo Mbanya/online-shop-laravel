@@ -2,7 +2,9 @@
 
 namespace Domains\Customer\Models;
 
+use Database\Factories\UserFactory;
 use Domains\Customer\Models\Concerns\HasUuid;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -39,5 +41,15 @@ class User extends Authenticatable
     public function addresses (): HasMany
     {
         return  $this->hasMany(Address::class,'user_id');
+    }
+
+    /**
+     * Create a new factory instance for the model.
+     *
+     * @return UserFactory|Factory
+     */
+    protected static function newFactory(): UserFactory|Factory
+    {
+        return  new UserFactory();
     }
 }
