@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d4842c22e789d247c4b660e69490545f",
+    "content-hash": "b24c6faacba34dfe141e75dc88c25357",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -957,6 +957,79 @@
                 }
             ],
             "time": "2021-10-06T17:43:30+00:00"
+        },
+        {
+            "name": "juststeveking/laravel-postcodes",
+            "version": "V1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JustSteveKing/LaravelPostcodes.git",
+                "reference": "8146ea698867af3f3094ee5ca2f8f92bd8225beb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JustSteveKing/LaravelPostcodes/zipball/8146ea698867af3f3094ee5ca2f8f92bd8225beb",
+                "reference": "8146ea698867af3f3094ee5ca2f8f92bd8225beb",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "illuminate/support": "~5.8|^6.0|^7.0|^8.0",
+                "php": "~7.2|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0",
+                "phpunit/phpunit": ">=7.0",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "JustSteveKing\\LaravelPostcodes\\PostcodesServiceProvider"
+                    ],
+                    "aliases": {
+                        "Postcode": "JustSteveKing\\LaravelPostcodes\\Facades\\Postcode"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JustSteveKing\\LaravelPostcodes\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Steve McDougall",
+                    "email": "juststevemcd@gmail.com",
+                    "homepage": "https://github.com/JustSteveKing",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A service wrapper around postcodes.io",
+            "homepage": "https://github.com/JustSteveKing/LaravelPostcodes",
+            "keywords": [
+                "JustSteveKing",
+                "LaravelPostcodes"
+            ],
+            "support": {
+                "issues": "https://github.com/JustSteveKing/LaravelPostcodes/issues",
+                "source": "https://github.com/JustSteveKing/LaravelPostcodes/tree/V1.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/JustSteveKing",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-06-18T16:47:41+00:00"
         },
         {
             "name": "laravel/framework",
@@ -7952,7 +8025,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.3|^8.0"
+        "php": "^8.0"
     },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"
