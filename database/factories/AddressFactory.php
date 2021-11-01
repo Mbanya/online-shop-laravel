@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace Database\Factories;
 
+use Arr;
 use Domains\Customer\Models\Address;
 use Domains\Customer\Models\Location;
 use Domains\Customer\Models\User;
@@ -15,7 +16,7 @@ class AddressFactory extends Factory
     public function definition(): array
     {
         return [
-            'label'=> \Arr::random(['Home','Office','Head Office'. 'Mums House']),
+            'label'=> Arr::random(['Home','Office','Head Office'. 'Mums House']),
             'billing'=> $this->faker->boolean,
             'user_id' => User::factory()->create(),
             'location_id' => Location::factory()->create(),
